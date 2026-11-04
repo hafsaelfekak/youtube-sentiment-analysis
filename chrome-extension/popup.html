@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sentiment Analyzer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div>
+                <h1>YouTube Analyzer</h1>
+                <p>Analyse des sentiments des commentaires</p>
+            </div>
+
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+        </header>
+
+        <button id="analyzeBtn" class="primary-btn">
+            Analyser les commentaires
+        </button>
+
+        <p id="status" class="status">
+            Ouvre une vidéo YouTube pour commencer.
+        </p>
+
+        <section id="results" hidden>
+
+            <h2>Statistiques globales</h2>
+
+            <div class="total-card">
+                <span>Total des commentaires analysés</span>
+                <strong id="total">0</strong>
+            </div>
+
+            <div class="statistics">
+
+                <div class="stat-card positive">
+                    <span>Positifs</span>
+                    <strong id="positiveCount">0</strong>
+                    <small id="positivePercent">0%</small>
+                </div>
+
+                <div class="stat-card neutral">
+                    <span>Neutres</span>
+                    <strong id="neutralCount">0</strong>
+                    <small id="neutralPercent">0%</small>
+                </div>
+
+                <div class="stat-card negative">
+                    <span>Négatifs</span>
+                    <strong id="negativeCount">0</strong>
+                    <small id="negativePercent">0%</small>
+                </div>
+
+            </div>
+
+            <h2>Répartition des sentiments</h2>
+
+            <div class="bar-container">
+                <div id="positiveBar" class="bar positive"></div>
+                <div id="neutralBar" class="bar neutral"></div>
+                <div id="negativeBar" class="bar negative"></div>
+            </div>
+
+            <div class="results-header">
+                <h2>Commentaires</h2>
+
+                <select id="filter">
+                    <option value="all">Tous</option>
+                    <option value="positive">Positifs</option>
+                    <option value="neutral">Neutres</option>
+                    <option value="negative">Négatifs</option>
+                </select>
+            </div>
+
+            <div id="commentsList"></div>
+
+            <div class="actions">
+                <button id="copyBtn">Copier</button>
+                <button id="exportBtn">Exporter CSV</button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+</html>

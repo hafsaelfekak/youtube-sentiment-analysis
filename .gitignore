@@ -1,0 +1,22 @@
+# Environnement virtuel
+venv/
+.env
+
+# Fichiers Python temporaires
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Données brutes
+data/raw/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers temporaires
+*.tmp
