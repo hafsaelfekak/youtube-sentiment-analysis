@@ -245,10 +245,6 @@ Ajouter dans cette section les captures d'écran réelles de l'application :
 
 ![Extension Chrome](screenshots/extension.png)
 
-### Résultats de l'analyse des sentiments
-
-![Résultats de l'analyse](screenshots/results.png)
-
 ### Documentation de l'API
 
 ![Documentation Swagger](screenshots/swagger.png)
