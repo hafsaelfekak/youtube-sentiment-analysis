@@ -239,8 +239,6 @@ Le modèle sélectionné ainsi que le vectoriseur TF-IDF sont sauvegardés au fo
 
 ## Captures d'écran
 
-Ajouter dans cette section les captures d'écran réelles de l'application :
-
 ### Extension Chrome
 
 ![Extension Chrome](screenshots/extension.png)
